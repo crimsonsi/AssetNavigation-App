@@ -3,5 +3,5 @@ package ke.co.osl.assetnavigationapp.models
 
 data class mappedBody(
    val total: Int,
-   val data: List<dataBody>
+   val data: List<CustomerDetailsBody>
 )

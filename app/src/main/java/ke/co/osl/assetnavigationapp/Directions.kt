@@ -32,7 +32,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class HomePage : AppCompatActivity() {
+class Directions : AppCompatActivity() {
     lateinit var dialog: Dialog
     lateinit var toolbar: Toolbar
     lateinit var webView: WebView
@@ -52,7 +52,7 @@ class HomePage : AppCompatActivity() {
     var lng: Double = 0.0
     var acc: Float = 0f
 
-  val ip_URL = "http://102.222.147.190/api/homepage/"
+    val ip_URL = "http://102.222.147.190/api/homepage/"
 
     object AndroidJSInterface {
         @JavascriptInterface
@@ -63,7 +63,7 @@ class HomePage : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+        setContentView(R.layout.activity_directions)
 
         //This section comprises of the navigation tools
         toolbar = findViewById(R.id.appbar)
@@ -137,11 +137,11 @@ class HomePage : AppCompatActivity() {
             override fun onPageFinished(view: WebView, url: String) {
                 progDailog.dismiss()
                 if (ActivityCompat.checkSelfPermission(
-                        this@HomePage,
+                        this@Directions,
                         Manifest.permission.ACCESS_FINE_LOCATION
                     )
                     != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(
-                        this@HomePage, Manifest.permission.ACCESS_COARSE_LOCATION
+                        this@Directions, Manifest.permission.ACCESS_COARSE_LOCATION
                     ) != PackageManager.PERMISSION_GRANTED
                 ) {
                     requestLocationPermission()
@@ -177,7 +177,7 @@ class HomePage : AppCompatActivity() {
 
         //Back to HomePage
         back.setOnClickListener {
-            startActivity(Intent(this@HomePage, LoginPage::class.java))
+            startActivity(Intent(this@Directions, HomePage::class.java))
         }
 
 
@@ -231,7 +231,8 @@ class HomePage : AppCompatActivity() {
         meterno.setText( "Meter/No: " + get.MeterNo)
 
         directions.setOnClickListener {
-            startActivity(Intent(this@HomePage, Directions::class.java))
+            d.hide()
+            Toast.makeText(this,"This part is under development", Toast.LENGTH_SHORT)
         }
 
         d.getWindow()?.setBackgroundDrawableResource(R.drawable.background_transparent);
