@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="farming" >
+        <item>Crop Farming</item>
+        <item>Livestock Farming</item>
+        <item>Mixed Farming</item>
+    </string-array>
+    <string-array name="ages" >
+        <item>Below 20 Years</item>
+        <item>20 - 30 Years</item>
+        <item>30 - 40 Years</item>
+        <item>40 - 50 Years</item>
+        <item>Above 50 Years</item>
+    </string-array>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+</resources>

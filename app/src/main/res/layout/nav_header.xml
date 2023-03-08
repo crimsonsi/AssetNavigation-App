@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@drawable/bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/appname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Utility Manager"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_marginStart="24dp"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Map Utility Networks"
+        android:textColor="@color/orange"
+        android:textSize="16sp"
+        android:layout_marginStart="24dp"
+        android:gravity="left"
+        android:layout_marginTop="32dp"/>
+
+</LinearLayout>

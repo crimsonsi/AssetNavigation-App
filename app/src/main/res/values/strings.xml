@@ -1,0 +1,613 @@
+<resources>
+    <string name="app_name">UT Collector</string>
+    <string name="app_header_title">Mathira Water \n &amp; \n Sanitation Company</string>
+    <string name="app_header_title2">Utility Manager</string>
+    <string name="title_activity_home">Home</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="spinner_prompt">Select an option</string>
+    <string name="enter_name">Enter name</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_mobile">Enter Mobile</string>
+    <string name="forgot_password_click_here">Forgot password, click here?</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="forgot_password_details">Forgot Password Details</string>
+
+    <string-array name="spinner_array">
+        <item>Option 1</item>
+        <item>Option 2</item>
+        <item>Option 3</item>
+    </string-array>
+    <string-array name="material">
+        <item>Polymer</item>
+        <item>Brass</item>
+        <item>Plastic</item>
+    </string-array>
+    <string-array name="classs">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+    </string-array>
+    <string-array name="brand">
+        <item>YUONSO</item>
+        <item>TWSB</item>
+        <item>ARAD</item>
+        <item>AIMEI</item>
+        <item>SUPER</item>
+        <item>DUNWELLS</item>
+    </string-array>
+    <string-array name="meter_status">
+        <item>Metered</item>
+        <item>Unmetered</item>
+    </string-array>
+    <string-array name="utility_networks">
+        <item>Customer Meters</item>
+        <item>Gate Valves</item>
+    </string-array>
+    <string-array name="sewer_networks">
+        <item>Sewer Lines</item>
+        <item>Pipelines</item>
+    </string-array>
+    <string-array name="meter_size">
+        <item>0.5</item>
+        <item>0.75</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="conn_status">
+        <item>Domestic</item>
+        <item>Institutions</item>
+        <item>Commercial</item>
+    </string-array>
+    <string-array name="account_status">
+        <item>Active</item>
+        <item>Sealed</item>
+        <item>Dormant</item>
+        <item>Closed</item>
+        <item>Cut-off</item>
+    </string-array>
+
+    <string-array name="status">
+        <item>Active</item>
+        <item>Inactive</item>
+    </string-array>
+
+    <string-array name="valve">
+        <item>Gate Valve</item>
+        <item>Air Valve</item>
+        <item>Sluice Valve</item>
+    </string-array>
+
+    <string-array name="waterpipetype">
+        <item>Laterals</item>
+        <item>Service Lines</item>
+        <item>Main Lines</item>
+    </string-array>
+
+    <string-array name="sewerlinetype">
+        <item>Feeders</item>
+        <item>Sewer Lines</item>
+        <item>Main Lines</item>
+    </string-array>
+
+    <string-array name="zone">
+        <item></item>
+        <item>001 GATHUGU</item>
+        <item>002 URBAN INSTITUTION</item>
+        <item>003 INDIAN</item>
+        <item>004 INDUSTRIAL</item>
+        <item>005 KARINDUNDU</item>
+        <item>006 MATHAITHI</item>
+        <item>007 RAGATI</item>
+        <item>008 SAIGON 1</item>
+        <item>009 SOFIA</item>
+        <item>010 MUTHUA</item>
+        <item>011 BLUE VALLEY</item>
+        <item>012 83</item>
+        <item>013 84</item>
+        <item>014 85</item>
+        <item>015 86</item>
+        <item>016 87</item>
+        <item>017 88</item>
+        <item>018 JAMBO - 88</item>
+        <item>018 TUMUTUMU - 87</item>
+        <item>019 89</item>
+        <item>020 90</item>
+        <item>021 91</item>
+        <item>022 92</item>
+        <item>023 82 (INST.RURAL)</item>
+        <item>024 90</item>
+        <item>024 92</item>
+        <item>024 93</item>
+    </string-array>
+
+    <string-array name="scheme_name">
+        <item>RURAL</item>
+        <item>URBAN</item>
+    </string-array>
+    <string-array name="route">
+        <item></item>
+        <item>005 KARINDUNDU - JAMBO</item>
+        <item>005 KARINDUNDU 01</item>
+        <item>195 NYERI HIGHWAY</item>
+        <item>196 KAGUONGO LANE</item>
+        <item>197 BRAVO AREA</item>
+        <item>198 UCHUMI &amp; TIMES</item>
+        <item>199 KAWANGWARE AREA</item>
+        <item>200 MARKET</item>
+        <item>201 JAMAICA</item>
+        <item>202 PAKONI AREA</item>
+        <item>203 MUYA</item>
+        <item>256 KARINDUNDU SHOPPING CENTRE</item>
+        <item>341 Not Billed Karindundu</item>
+        <item>392 GM LANE</item>
+        <item>393 UCHUMI  LANE</item>
+        <item>394 BROKE FIELD LANE</item>
+        <item>395 CRISCO LANE</item>
+        <item>396 GOSPEL OUT REACH</item>
+        <item>397 KWETU TYMS LANE </item>
+        <item>006 MATHAITHI 01</item>
+        <item>260 2nd lane way to sec sch</item>
+        <item>261 kiangurwe</item>
+        <item>262 kiandigi</item>
+        <item>263 behind p.c.e.a</item>
+        <item>264 near mentally sch</item>
+        <item>265 1st lane way to sec sch</item>
+        <item>266 facing muthua</item>
+        <item>267 behind mentally school</item>
+        <item>268 opposite mugambis</item>
+        <item>269 behind mugambis home</item>
+        <item>270 kairanis lane</item>
+        <item>271 behind mugambis</item>
+        <item>272 1st path after kirigu</item>
+        <item>342 Not Billed Mathaithi </item>
+        <item>007- FACING MAWASCO OFFICES</item>
+        <item>007- FACING RAILWAY LINE</item>
+        <item>007- KIMATHI AREA</item>
+        <item>007- KINGI CUBU LANE</item>
+        <item>007- M.O.W AREA</item>
+        <item>007 RAGATI 1</item>
+        <item>211 RAGATI VILLAGE</item>
+        <item>212 RAGATI RD &amp; ENVIRONS</item>
+        <item>213 RAGATI SHOPS</item>
+        <item>255 MUNGI</item>
+        <item>334 Not Billed Ragati</item>
+        <item>355 KAGOMBES</item>
+        <item>356 MBAWAS AREA</item>
+        <item>375 CATHOLIC AREA</item>
+        <item>409 gachugu area </item>
+        <item>008 SAIGON 1-008 SAIGON 1-322 </item>
+        <item>008 SAIGON 1-008 SAIGON 1-322 WAMBUGU LANE - </item>
+        <item>008 SAIGON 1-008 SAIGON 1-322 WAMBUGU LANE - METER II</item>
+        <item>008 SAIGON 1-319 KARJ LANE- METER I</item>
+        <item>008 SAIGON 1-320 KARUMARUMA LANE - </item>
+        <item>008 SAIGON 1-320 KARUMARUMA LANE - METER I</item>
+        <item>008 SAIGON 1-321 KIRAN LANE - METER I</item>
+        <item>008 SAIGON 1-323 SHAMBA LANE - METER I</item>
+        <item>008 SAIGON 1-324 HOSPITAL LANE - METER II</item>
+        <item>008 SAIGON 1-325 V.I.L. - METER I</item>
+        <item>008 SAIGON 1-326 ANTIOCH LANE - METER I</item>
+        <item>008 SAIGON 1-327 JAMII LANE - METER I</item>
+        <item>008 SAIGON 1-328 KIAR. ROAD - METER III</item>
+        <item>008 SAIGON 1-329 VIL - METER I</item>
+        <item>008 SAIGON 1-330 KAG AREA - METER II</item>
+        <item>008 SAIGON 1-331 ITHORDEKAS - METER I</item>
+        <item>017 SAIGON 1 </item>
+        <item>022 SOFIA -1</item>
+        <item>173 BROTHERS GITHEMU</item>
+        <item>174 Kimathi st</item>
+        <item>175 BAKERY ST</item>
+        <item>176 DRIVING SCH ST</item>
+        <item>177 JUA KALI</item>
+        <item>178 IBIS2-SAMARIA</item>
+        <item>180 GYM-HAIR PLAZA</item>
+        <item>Ragati - Victors </item>
+        <item>Ragati - Victors Chapel Route </item>
+        <item>021 MUTHUA -01</item>
+        <item>168 K.M.C HOUSES MIDDLE</item>
+        <item>169 FIRST LANE</item>
+        <item>170 SHOP LANE</item>
+        <item>171 SECOND LANE</item>
+        <item>172 ITHIRU AREA</item>
+        <item>363 K.M.C. HOUSES UPPER</item>
+        <item>364 K.M.C.HOUSES LOWER</item>
+        <item>BETWEEN 1ST LANE &amp; </item>
+        <item>BETWEEN 1ST LANE &amp; 2ND LANE</item>
+        <item>FACING KMC</item>
+        <item>KMC LOWER LEFT</item>
+        <item>KMC LOWER RIGHT</item>
+        <item>KMC MIDDLE LEFT</item>
+        <item>KMC MIDDLE RIGHT</item>
+        <item>KMC UPPER LEFT</item>
+        <item>KMC UPPER RIGHT </item>
+        <item>008 BLUE VALLEY 01</item>
+        <item>011 b/valley 1</item>
+        <item>011-413 Railway Route</item>
+        <item>274 GIAKAIRU 1</item>
+        <item>398 JAMII LANE</item>
+        <item>400 PANGA LANE</item>
+        <item>401 BAPTIST LANE</item>
+        <item>402 LIBRARY LANE</item>
+        <item>409 RIVER SIDE LANE</item>
+        <item>411 MTUMBA ZONE</item>
+        <item>412 GIAKAIRU 2</item>
+        <item>BLUE VALLEY - </item>
+        <item>BLUE VALLEY - BAPTIST LANE</item>
+        <item>BLUE VALLEY - BIASHARA PLAZA</item>
+        <item>BLUE VALLEY - JAMII LANE</item>
+        <item>BLUE VALLEY - PANGA LANE</item>
+        <item>BLUE VALLEY - RIVER CHASE</item>
+        <item>BLUE VALLEY - RIVER LANE</item>
+        <item>GIAKAIRU - MIDDLE LANE</item>
+        <item>GIAKAIRU - MITUMBA LANE</item>
+        <item>GIAKAIRU - POLICE CANTEEN</item>
+        <item>GIAKAIRU - POLICE LANE</item>
+        <item>GIAKAIRU - RAILWAY LANE </item>
+        <item>012 83-KIAMARIGA LOWER DMA</item>
+        <item>013- BEHIND COFFEE FACTORY</item>
+        <item>013- BELOW HEALTH CENTRE</item>
+        <item>013- BETWEEN HOSPITAL &amp; MAIN </item>
+        <item>013- BETWEEN HOSPITAL &amp; MAIN ROAD</item>
+        <item>013- KANYOTA</item>
+        <item>013- KIAMARIGA TOWN (Upper Side) </item>
+        <item>070 RUGURU</item>
+        <item>071 IRURI</item>
+        <item>072 KIAIHURU</item>
+        <item>073 GIKIRIRI</item>
+        <item>074 NYANA</item>
+        <item>075 KIANJAU</item>
+        <item>076 KIAMARIGA</item>
+        <item>077 KAGATI</item>
+        <item>078 GITHAMBIRO</item>
+        <item>105 GITHIRINGO</item>
+        <item>126 KIAMBII</item>
+        <item>127 GATAKAINI</item>
+        <item>131 RANGI</item>
+        <item>137 NDUNDUINI</item>
+        <item>183 GICHORU</item>
+        <item>185 NJOGU YA WANJIKU</item>
+        <item>258 NJATHEINI</item>
+        <item>HIRIGA (83) </item>
+        <item>NGORANO </item>
+        <item>013 84-KINGUKIRO</item>
+        <item>017- BEHIND NJATHEINI PRIMARY SCHOOL</item>
+        <item>017- Njatheini Main Road</item>
+        <item>06- MARIA FIRST LANE</item>
+        <item>07- MARIA SECOND LANE</item>
+        <item>079 KIRIKO</item>
+        <item>080 GITATHI</item>
+        <item>081 HIRIGA</item>
+        <item>082 KABIRUINI</item>
+        <item>087 KIANDAKA</item>
+        <item>089 NJATHEINI</item>
+        <item>090 KARUTHI</item>
+        <item>106 KAGATI</item>
+        <item>11- ROAD BEHIND BUYING CENTER</item>
+        <item>159 NGORANO</item>
+        <item>186 MARIA</item>
+        <item>187 MUTIINI</item>
+        <item>217 MIORO</item>
+        <item>389 NJUBIU </item>
+        <item>014 85-109 MUKONYE </item>
+        <item>014 85-109 MUKONYE LOWER</item>
+        <item>067 ITIATI</item>
+        <item>068 GAIKUYU</item>
+        <item>069 GITUNDUTI</item>
+        <item>095 KIAMIGWI</item>
+        <item>108 KIAMUCHERU</item>
+        <item>110 HIGHLAND</item>
+        <item>129 SHAURIMOYO</item>
+        <item>143 GIKORE</item>
+        <item>144 MUBERETHI</item>
+        <item>145 GIAKAMURU</item>
+        <item>146 SITE</item>
+        <item>220 KIHURI</item>
+        <item>221 RAINI</item>
+        <item>222 MUTHIRA</item>
+        <item>223 GATURUMO</item>
+        <item>224 GIAKABURI</item>
+        <item>225 GATHARE</item>
+        <item>228 KINGANGA</item>
+        <item>229 KAGOCHI</item>
+        <item>230 MAGUTU</item>
+        <item>231 CHAINA</item>
+        <item>232 GATHUINI </item>
+        <item>037 GACHUIRO</item>
+        <item>038 RAGATI</item>
+        <item>039 GIKUMBO</item>
+        <item>040 ICHUGA</item>
+        <item>041 KIAWARIGI</item>
+        <item>042 KIAMACHIMBI</item>
+        <item>043 KIHURO</item>
+        <item>092 UNJIRU</item>
+        <item>093 KIMATHI</item>
+        <item>118 RUTHAGATI</item>
+        <item>119 KIANGI</item>
+        <item>120 KARURA</item>
+        <item>124 NGAINI</item>
+        <item>125 KARINDI</item>
+        <item>151 SHAURIMOYO</item>
+        <item>214 ITIKI</item>
+        <item>215 KINDARA</item>
+        <item>216 MUTITU</item>
+        <item>240 GATHUMBI</item>
+        <item>259 Gathiururuko</item>
+        <item>275 KANYAITE</item>
+        <item>276 GATERENDU</item>
+        <item>301 Thaithini</item>
+        <item>384 KAMUKUNGA</item>
+        <item>014 IRERI</item>
+        <item>014- MBARI YA MIIRIA</item>
+        <item>014- RUGOKA</item>
+        <item>014-87 KABII</item>
+        <item>016 87-KIAMUTHUA ESTATE</item>
+        <item>032 UNJIRU</item>
+        <item>033 NGANDU</item>
+        <item>034 MATHAITHI</item>
+        <item>035 KANYAMA</item>
+        <item>036 MBOGOINI</item>
+        <item>054 GACHIKU</item>
+        <item>055 KAIRIA</item>
+        <item>056 THAITHI</item>
+        <item>063 ICHUGA</item>
+        <item>091 RITITI</item>
+        <item>094 TUMUTUMU</item>
+        <item>102 KANYAMWERU</item>
+        <item>103 KONDWEINI</item>
+        <item>114 KIRIMUKUYU</item>
+        <item>128 KAREGA</item>
+        <item>182 KIRIKO</item>
+        <item>257 Kiamaina</item>
+        <item>273 KIANDIGI</item>
+        <item>278 KAIYABA</item>
+        <item>279 KAROGOTO</item>
+        <item>282 Ngunguru</item>
+        <item>299 KANJATA</item>
+        <item>300 KIANDERI</item>
+        <item>306 Gaturiri</item>
+        <item>352 KAIGI</item>
+        <item>371 CHERU</item>
+        <item>374 GITURI</item>
+        <item>376 KIAMAMUNYO</item>
+        <item>425 GIAITUU </item>
+        <item>009 KIAMWANGI</item>
+        <item>010 MUHUHI</item>
+        <item>012- Behind Kiarithaini Secondary</item>
+        <item>012- Behind Shopping Center</item>
+        <item>012 IHWAGI</item>
+        <item>012- Ihwagi Shopping Center</item>
+        <item>012- Kiarithaini - Kiamwangi</item>
+        <item>012- Miharatti</item>
+        <item>012- Riverbank Lane</item>
+        <item>012- Village</item>
+        <item>013 KAMUYU</item>
+        <item>014 GATHIMA</item>
+        <item>015 KIAMBAA</item>
+        <item>016 KIARUAI</item>
+        <item>020 KIARITHAINI</item>
+        <item>066 JAMBO</item>
+        <item>116 KIARITHAINI</item>
+        <item>123 KANGOCHO</item>
+        <item>147 MWANDA</item>
+        <item>160 KARINDUNDU</item>
+        <item>161 KANGOCHO </item>
+        <item>025- JAMBO SHOPPING CENTER</item>
+        <item>404 Highway Jambo Town</item>
+        <item>405 Hot Pot &amp; Mwanda</item>
+        <item>406 Karindundu</item>
+        <item>407 Kerugoya Rd</item>
+        <item>408 Kiamwangi Rd </item>
+        <item>022- RUGOKA</item>
+        <item>022- RUGUKA</item>
+        <item>029- NGURUMO</item>
+        <item>2000 HOSPITAL STAFF </item>
+        <item>2000 HOSPITAL STAFF QUARTER </item>
+        <item>283 IKONJU</item>
+        <item>284 KIANGOMA</item>
+        <item>285 TUMUTUMU B</item>
+        <item>286 MBOGOINI B</item>
+        <item>288 IBIRIRI</item>
+        <item>289 KAMATU</item>
+        <item>290 MBARI YA NJOYA</item>
+        <item>293 KAROGOTO</item>
+        <item>294 THIU</item>
+        <item>295 THIMU</item>
+        <item>296 NGUNGURU</item>
+        <item>298 Bikini</item>
+        <item>302 Kiambachi</item>
+        <item>303 Gathagana. </item>
+        <item>305 KAHIGA</item>
+        <item>315 Giagatika</item>
+        <item>KAROGOTO DMA</item>
+        <item>018 TUMUTUMU - 87 Total</item>
+        <item>001 GATEI 01</item>
+        <item>018 GATHEHU</item>
+        <item>030 KIRIMA</item>
+        <item>083 MUOROTO</item>
+        <item>099 KIUNJUGI</item>
+        <item>130 GIAKAIBEI</item>
+        <item>133 KANJURI</item>
+        <item>141 GIAKABURI</item>
+        <item>142 MUGUGUTU</item>
+        <item>148 KAGOCHI</item>
+        <item>224 GIAKABURI</item>
+        <item>226 KAIRINI</item>
+        <item>227 KIAMUIRU</item>
+        <item>251 KIARAGE</item>
+        <item>252 NDUMANU</item>
+        <item>253 KANGIRI</item>
+        <item>280 GATURUMO</item>
+        <item>372 KARIAMBI</item>
+        <item>415 KIAMIGWII </item>
+        <item>023 ITUNDU</item>
+        <item>024 CHEHE</item>
+        <item>025 KARIKI</item>
+        <item>029 MWIRUA</item>
+        <item>031 GATONDO</item>
+        <item>084 KAGUYU</item>
+        <item>085 MUKURE</item>
+        <item>101 NDIRITI</item>
+        <item>13 GATONDO SHOPPING CENTER</item>
+        <item>134 CHEHE</item>
+        <item>14 GATONDO ROAD</item>
+        <item>15- CATHOLIC AREA</item>
+        <item>153 KIARUHIU</item>
+        <item>162 KANGIRI</item>
+        <item>163 GITEMANI</item>
+        <item>164 KIAWAIGURU</item>
+        <item>165 GIAKINYUA</item>
+        <item>166 MUTHUTHIINI</item>
+        <item>167 KAHURU</item>
+        <item>17 MUGA LANE</item>
+        <item>20 KARIKI CATHOLIC LANE</item>
+        <item>21 KARIKI GATONDO JUNCTION</item>
+        <item>22 TUMAINI LANE</item>
+        <item>23 JIKAZE LANE</item>
+        <item>24 CHEHE PRIMARY ROUTE</item>
+        <item>26 TOWARDS KIARUHIU LEFT SIDE</item>
+        <item>27 KIAMUTHUMBI </item>
+        <item>27 KIAMUTHUMBI ROUTE</item>
+        <item>30 KINGETHU ROUTE</item>
+        <item>308 Gathugune</item>
+        <item>309 KIRITI</item>
+        <item>310 Kairi-Itundu</item>
+        <item>311 Kiaruhiu-Kiamuthumbi</item>
+        <item>312 Gatondo-Kagotha</item>
+        <item>313 KIANGOMBE</item>
+        <item>314 Kiaruhiu-Town</item>
+        <item>33 IDDA LANE</item>
+        <item>34 OUTER LINE KIARUHIU</item>
+        <item>358 GATHAITHI</item>
+        <item>377 KIAMUTHUMBI </item>
+        <item>019 91- 001 KIANGI</item>
+        <item>019 MIIRI</item>
+        <item>026 KAHURU</item>
+        <item>027 KIANGAI</item>
+        <item>028 KIRIKO</item>
+        <item>065 KIINE</item>
+        <item>088 KAGUYU</item>
+        <item>104 THEGENGE</item>
+        <item>111 MATHIA</item>
+        <item>121 GIKORORO</item>
+        <item>135 CHEHE</item>
+        <item>136 NDIMA</item>
+        <item>155 KIANYANGE</item>
+        <item>156 MATHIKERI</item>
+        <item>157 KIANWE</item>
+        <item>158 NDIMA KANINI</item>
+        <item>239 KIABARITIRI</item>
+        <item>254 GATHUNGURURU</item>
+        <item>281 MERERE</item>
+        <item>385 KAMUNYAKA</item>
+        <item>386 GITHURAI</item>
+        <item>387 RUIRU</item>
+        <item>413 KIANJUU</item>
+        <item>422 GATURA</item>
+        <item>604 KIRIMA IGURU</item>
+        <item>605 KANUNGU</item>
+        <item>606 Mashujaa</item>
+        <item>607 KARIKI </item>
+        <item>023 92-427 MUKANGU</item>
+        <item>023- GATAKAINI/RELI</item>
+        <item>023 Machaka</item>
+        <item>023 MUTITU</item>
+        <item>096 GITHIMA</item>
+        <item>304 kianjogu</item>
+        <item>332 NDIMA</item>
+        <item>344 KIRIMARA</item>
+        <item>345 KARINDUNDU</item>
+        <item>346 NDIMAINI</item>
+        <item>347 KIANGOGOYO</item>
+        <item>348 KIAGUTHU</item>
+        <item>349 NDAROINI</item>
+        <item>350 GITUMBI</item>
+        <item>351 MUTUI</item>
+        <item>357 MUCHOHI</item>
+        <item>362 KIANJOGU</item>
+        <item>365 KARIA</item>
+        <item>367 GITHIMA</item>
+        <item>368 KIHAYU</item>
+        <item>369 GATURIRI</item>
+        <item>370 KIAMABARA</item>
+        <item>409 Ikwa-ini</item>
+        <item>417 NGARARIGA</item>
+        <item>418 KAHUTI-INI</item>
+        <item>420 KANYANGE</item>
+        <item>421 GATINA ROAD</item>
+        <item>423 KAGETI</item>
+        <item>424 KAMATU</item>
+        <item>425 GAKUYU</item>
+        <item>CHECHENI</item>
+        <item>GATHUGU</item>
+        <item>GATWE</item>
+        <item>GITHUTHI</item>
+        <item>KAREMBU</item>
+        <item>KIRIGU - KANGORU</item>
+        <item>MUNENGERE </item>
+        <item>0021- INST. 83</item>
+        <item>0021- INST. 84</item>
+        <item>0023- INST. 86</item>
+        <item>0025- INST. 87</item>
+        <item>0027- INST. 89</item>
+        <item>0027- INST. 90</item>
+        <item>0028- INST. 91</item>
+        <item>0029- INST. 92</item>
+        <item>020- INST. 85</item>
+        <item>020- INST. 88</item>
+        <item>044 RAGATI</item>
+        <item>045 ITIATI</item>
+        <item>047 GITUNDUTI</item>
+        <item>049 GIKUMBO</item>
+        <item>053 GAIKUYU</item>
+        <item>057 UNJIRU</item>
+        <item>058 NGANDU</item>
+        <item>061 CHEHE</item>
+        <item>062 KIANGAI</item>
+        <item>064 KIAMARIGA</item>
+        <item>115 GACHUIRO</item>
+        <item>117 KIARITHAINI</item>
+        <item>139 KIAMWANGI</item>
+        <item>140 GIKORORO</item>
+        <item>318 TUMUTUMU</item>
+        <item>354 KARINDUNDU</item>
+        <item>366 KIARUHIU</item>
+        <item>023 82 (INST. RURAL) Total</item>
+        <item>136 NDIMA</item>
+        <item>344 KIRIMARA</item>
+        <item>345 KARINDUNDU</item>
+        <item>347 KIANGOGOYO</item>
+        <item>348 KIAGUTHU</item>
+        <item>349 NDAROINI</item>
+        <item>350 GITUMBI</item>
+        <item>351 MUTUI</item>
+        <item>357 MUCHOHI</item>
+        <item>362 KIANJOGU</item>
+        <item>GATHAGANA</item>
+        <item>GATINA ROAD</item>
+        <item>IKWA-INI</item>
+        <item>KAGETI</item>
+        <item>KAHUTI-INI</item>
+        <item>KANYANGE</item>
+        <item>KIAHITI</item>
+        <item>MATHARE</item>
+        <item>NDIMAINI</item>
+        <item>NGARARIGA </item>
+        <item>2ND LANE</item>
+        <item>BIASHARA PLAZA</item>
+        <item>Chapel Route</item>
+        <item>DRAPPERS</item>
+        <item>LOWER</item>
+        <item>METER I</item>
+        <item>METER II</item>
+        <item>QUARTER </item>
+        <item>ROAD</item>
+        <item>ROUTE</item>
+        <item>WAMBUGU LANE - METER II</item>
+</string-array>
+</resources>

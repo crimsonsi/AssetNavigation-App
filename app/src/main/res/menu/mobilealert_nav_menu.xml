@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:title="Customers Portal">
+            <menu>
+                <item
+                    android:id="@+id/nav_home"
+                    android:icon="@drawable/ic_backarrow"
+                    android:title="Home" />
+
+                <item
+                    android:id="@+id/about"
+                    android:icon="@drawable/ic_backarrow"
+                    android:title="About" />
+
+                <item
+                    android:id="@+id/privacypolicy"
+                    android:icon="@drawable/ic_backarrow"
+                    android:title="Privacy Policy" />
+
+            </menu>
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="MAWASCO Staff">
+            <menu>
+                <item
+                    android:id="@+id/meterreaders"
+                    android:icon="@drawable/ic_backarrow"
+                    android:title="Meter Readers" />
+                <item
+                    android:id="@+id/datacollectors"
+                    android:icon="@drawable/ic_backarrow"
+                    android:title="Data Collectors" />
+            </menu>
+        </item>
+    </group>
+</menu>

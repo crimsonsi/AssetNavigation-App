@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:title="User Profile">
+            <menu>
+                <item
+                    android:id="@+id/nav_home"
+                    android:icon="@drawable/ic_baseline_home_24"
+                    android:title="Home" />
+
+                <item
+                    android:id="@+id/mappedPoints"
+                    android:icon="@drawable/add_location"
+                    android:title="Mapped Customers" />
+
+                <item
+                    android:id="@+id/waterPipes"
+                    android:icon="@drawable/add_location"
+                    android:title="Mapped Waterpipes" />
+
+                <item
+                    android:id="@+id/sewerlines"
+                    android:icon="@drawable/add_location"
+                    android:title="Mapped Sewerlines" />
+
+                <item
+                    android:id="@+id/changePassword"
+                    android:icon="@drawable/ic_password"
+                    android:title="Change Password" />
+
+                <item
+                    android:id="@+id/userDetails"
+                    android:icon="@drawable/ic_account_circle"
+                    android:title="User details" />
+
+                <item
+                    android:id="@+id/logout"
+                    android:icon="@drawable/ic_account_circle"
+                    android:title="Log Out" />
+
+            </menu>
+        </item>
+    </group>
+
+</menu>
