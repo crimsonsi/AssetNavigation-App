@@ -17,15 +17,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Data Collector"
-        android:gravity="center"
-        android:layout_marginBottom="10dp"
-        android:textColor="@color/greenblue"
-        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Login"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/greenblue"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            />
 
         <TextView
             android:id="@+id/error"
@@ -46,7 +46,7 @@
 
             <ImageView
                 android:layout_width="24dp"
-                android:layout_height="wrap_content"
+                android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:src="@drawable/ic_account_circle" />
 
@@ -75,7 +75,7 @@
 
             <ImageView
                 android:layout_width="24dp"
-                android:layout_height="wrap_content"
+                android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:src="@drawable/ic_password" />
 
@@ -111,7 +111,7 @@
                 android:text="@string/forgot_password"
                 android:textAppearance="@style/TextAppearance.AppCompat"
                 android:textColor="@color/translucent_black"
-                />
+                 />
 
             <TextView
                 android:id="@+id/forgotPassword"
@@ -121,16 +121,16 @@
                 android:text=" click here"
                 android:textAppearance="@style/TextAppearance.AppCompat"
                 android:textColor="@color/translucent_black"
-                />
+                 />
         </LinearLayout>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/next"
+            android:id="@+id/submit"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/dark_green_button"
             android:paddingStart="30dp"
             android:paddingRight="30dp"

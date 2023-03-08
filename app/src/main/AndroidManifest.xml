@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ke.co.osl.utcollectorapp">
+    package="ke.co.osl.assetnavigationapp">
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -40,7 +40,7 @@
 <!--                <category android:name="android.intent.category.LAUNCHER" />-->
 <!--            </intent-filter>-->
 <!--        </activity>-->
-        <activity android:name=".LandingPage"
+        <activity android:name="ke.co.osl.assetnavigationapp.LandingPage"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -48,10 +48,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginPageMobileAlert" />
-        <activity android:name=".HomeMobileAlert" />
-        <activity android:name=".PrivacyPolicy" />
-        <activity android:name=".About" />
+        <activity android:name="ke.co.osl.assetnavigationapp.LoginPage" />
+        <activity android:name="ke.co.osl.assetnavigationapp.HomePage" />
+        <activity android:name="ke.co.osl.assetnavigationapp.PrivacyPolicy" />
+        <activity android:name="ke.co.osl.assetnavigationapp.About" />
     </application>
 
 </manifest>
