@@ -205,9 +205,8 @@ class HomePage : AppCompatActivity() {
                         progress.visibility = View.GONE
                         showCustomersDetailsDialog(dialog, response?.body()?.get(0)!!)
                     } else {
-                        System.out.println(response?.body())
-                        progress.visibility = View.GONE
-                        showCustomersDetailsDialog(dialog, response?.body()?.get(0)!!)
+                        System.out.println()
+                        error.text = "Retrieve failed"
                     }
                 }
                 override fun onFailure(call: Call<List<CustomerDetailsBody>>, t: Throwable) {
