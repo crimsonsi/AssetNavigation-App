@@ -42,9 +42,6 @@ class Directions : AppCompatActivity() {
     lateinit var accuracy: TextView
     lateinit var coords: TextView
     lateinit var back: ImageView
-    lateinit var assigned: TextView
-    lateinit var pending: TextView
-    lateinit var complete: TextView
     lateinit var preferences: SharedPreferences
     lateinit var editor: SharedPreferences.Editor
 

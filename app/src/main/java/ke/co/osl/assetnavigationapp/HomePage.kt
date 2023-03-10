@@ -191,7 +191,6 @@ class HomePage : AppCompatActivity() {
         val error = findViewById<TextView>(R.id.error)
 
         search.setOnClickListener {
-
             if (TextUtils.isEmpty(searchtext.text.toString())) {
                 error.text = "Enter account number here to search!"
                 return@setOnClickListener
@@ -206,10 +205,11 @@ class HomePage : AppCompatActivity() {
                         progress.visibility = View.GONE
                         showCustomersDetailsDialog(dialog, response?.body()?.get(0)!!)
                     } else {
-                        error.text = "Account Number not found!"
+                        System.out.println(response?.body())
+                        progress.visibility = View.GONE
+                        showCustomersDetailsDialog(dialog, response?.body()?.get(0)!!)
                     }
                 }
-
                 override fun onFailure(call: Call<List<CustomerDetailsBody>>, t: Throwable) {
                     progress.visibility = View.GONE
                     System.out.println(t)
@@ -217,7 +217,6 @@ class HomePage : AppCompatActivity() {
                 }
             })
         }
-
     }
 
     private fun showCustomersDetailsDialog(d: Dialog, get: CustomerDetailsBody) {
