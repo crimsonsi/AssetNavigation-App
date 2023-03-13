@@ -42,6 +42,8 @@ class Directions : AppCompatActivity() {
     lateinit var accuracy: TextView
     lateinit var coords: TextView
     lateinit var back: ImageView
+    lateinit var close: Button
+
     lateinit var preferences: SharedPreferences
     lateinit var editor: SharedPreferences.Editor
 
@@ -86,6 +88,9 @@ class Directions : AppCompatActivity() {
 
 
 
+
+
+
         preferences = this.getSharedPreferences("ut_manager", MODE_PRIVATE)
         editor = preferences.edit()
 
@@ -93,6 +98,7 @@ class Directions : AppCompatActivity() {
         val myLocation = findViewById<ImageView>(R.id.location)
         val refresh = findViewById<ImageView>(R.id.refresh)
         val jwt = JWT(preferences.getString("token", "")!!)
+
 
 
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
@@ -182,6 +188,11 @@ class Directions : AppCompatActivity() {
 
         //Back to HomePage
         back.setOnClickListener {
+            startActivity(Intent(this@Directions, HomePage::class.java))
+        }
+
+        //Back to HomePage
+        close.setOnClickListener {
             startActivity(Intent(this@Directions, HomePage::class.java))
         }
 
