@@ -179,71 +179,7 @@ class Directions : AppCompatActivity() {
             startActivity(Intent(this@Directions, HomePage::class.java))
         }
 
-
-        searchCustomerMeter()
     }
-
-    private fun searchCustomerMeter() {
-        val search = findViewById<ImageView>(R.id.search)
-        val searchtext = findViewById<TextView>(R.id.searchtext)
-        val progress = findViewById<ProgressBar>(R.id.progress)
-        val error = findViewById<TextView>(R.id.error)
-
-        search.setOnClickListener {
-
-            if (TextUtils.isEmpty(searchtext.text.toString())) {
-                error.text = "Enter account number here to search!"
-                return@setOnClickListener
-            }
-
-            val apiInterface = ApiInterface.create().searchCustomerDetails(searchtext.text.toString())
-
-            apiInterface.enqueue( object : Callback<List<CustomerDetailsBody>> {
-                override fun onResponse(call: Call<List<CustomerDetailsBody>>, response: Response<List<CustomerDetailsBody>>?) {
-                    if (response?.body()?.size!! > 0) {
-                        System.out.println(response?.body())
-                        progress.visibility = View.GONE
-                        showCustomersDetailsDialog(dialog, response?.body()?.get(0)!!)
-                    } else {
-                        error.text = "Account Number not found!"
-                    }
-                }
-
-                override fun onFailure(call: Call<List<CustomerDetailsBody>>, t: Throwable) {
-                    progress.visibility = View.GONE
-                    System.out.println(t)
-                    error.text = "Connection to server failed!"
-                }
-            })
-        }
-
-    }
-
-    private fun showCustomersDetailsDialog(d: Dialog, get: CustomerDetailsBody) {
-        val customername = d.findViewById<TextView>(R.id.name)
-        val accountno = d.findViewById<TextView>(R.id.account_number)
-        val meterno = d.findViewById<TextView>(R.id.meter_number)
-        val directions = d.findViewById<TextView>(R.id.directions)
-
-        customername.setText("C/Name: " + get.Name)
-        accountno.setText("Account/No: " + get.AccountNo)
-        meterno.setText( "Meter/No: " + get.MeterNo)
-
-        directions.setOnClickListener {
-            d.hide()
-            Toast.makeText(this,"This part is under development", Toast.LENGTH_SHORT)
-        }
-
-        d.getWindow()?.setBackgroundDrawableResource(R.drawable.background_transparent);
-        d.setCancelable(true);
-        val window: Window = d.getWindow()!!
-        window.setLayout(
-            WindowManager.LayoutParams.MATCH_PARENT,
-            WindowManager.LayoutParams.MATCH_PARENT
-        )
-        d.show()
-    }
-
 
     private fun showSSLErrorDialog(handler: SslErrorHandler?) {
         handler?.proceed()
