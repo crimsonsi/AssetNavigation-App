@@ -71,6 +71,8 @@ class Directions : AppCompatActivity() {
         accuracy = findViewById(R.id.accuracy)
         coords = findViewById(R.id.coords)
 
+
+
         dialog = Dialog(this)
         dialog.setCancelable(true)
         dialog.setCanceledOnTouchOutside(true)
@@ -82,6 +84,8 @@ class Directions : AppCompatActivity() {
 
         back = findViewById(R.id.back)
 
+
+
         preferences = this.getSharedPreferences("ut_manager", MODE_PRIVATE)
         editor = preferences.edit()
 
@@ -89,6 +93,7 @@ class Directions : AppCompatActivity() {
         val myLocation = findViewById<ImageView>(R.id.location)
         val refresh = findViewById<ImageView>(R.id.refresh)
         val jwt = JWT(preferences.getString("token", "")!!)
+
 
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
 
@@ -165,6 +170,7 @@ class Directions : AppCompatActivity() {
                 }
             }
         }
+
 
         webView.loadUrl(ip_URL)
 
