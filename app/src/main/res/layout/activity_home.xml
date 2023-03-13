@@ -103,28 +103,39 @@
             android:textColor="@color/white"
             />
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/error"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
+            android:textColor="@color/orange"
+            android:gravity="center"
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
-            android:background="@drawable/translucent_white_card"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/translucent_white_card"
+            android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:orientation="horizontal">
+            app:layout_constraintStart_toStartOf="parent">
 
             <EditText
                 android:id="@+id/searchtext"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                android:hint="Enter Customer Account Number"
                 android:background="@drawable/input_green_border"
                 android:gravity="center"
+                android:hint="Enter Customer Account Number"
                 android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textColor="@color/dark_green"
                 android:textColorHint="@color/translucent_black"
                 android:textSize="12sp" />

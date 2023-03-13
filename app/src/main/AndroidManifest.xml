@@ -50,6 +50,7 @@
         </activity>
         <activity android:name="ke.co.osl.assetnavigationapp.LoginPage" />
         <activity android:name="ke.co.osl.assetnavigationapp.HomePage" />
+        <activity android:name="ke.co.osl.assetnavigationapp.Directions" />
         <activity android:name="ke.co.osl.assetnavigationapp.PrivacyPolicy" />
         <activity android:name="ke.co.osl.assetnavigationapp.About" />
     </application>

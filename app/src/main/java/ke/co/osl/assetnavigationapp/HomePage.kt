@@ -200,13 +200,13 @@ class HomePage : AppCompatActivity() {
 
             apiInterface.enqueue( object : Callback<List<CustomerDetailsBody>> {
                 override fun onResponse(call: Call<List<CustomerDetailsBody>>, response: Response<List<CustomerDetailsBody>>?) {
-                    if (response?.body()?.size!! > 0) {
-                        System.out.println(response?.body())
+                    if (response?.body() !== null && response.body()?.size!! > 0) {
+                        System.out.println(response.body())
                         progress.visibility = View.GONE
-                        showCustomersDetailsDialog(dialog, response?.body()?.get(0)!!)
+                        showCustomersDetailsDialog(dialog, response.body()?.get(0)!!)
                     } else {
-                        System.out.println()
-                        error.text = "Retrieve failed"
+                        error.text = "Customer not found!"
+                        searchtext.text = ""
                     }
                 }
                 override fun onFailure(call: Call<List<CustomerDetailsBody>>, t: Throwable) {
@@ -229,6 +229,7 @@ class HomePage : AppCompatActivity() {
         meterno.setText( "Meter/No: " + get.MeterNo)
 
         directions.setOnClickListener {
+            println("Go to directions")
             startActivity(Intent(this@HomePage, Directions::class.java))
         }
 

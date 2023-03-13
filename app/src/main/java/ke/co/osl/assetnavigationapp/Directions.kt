@@ -62,6 +62,8 @@ class Directions : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_directions)
 
+        System.out.println("Welcome to directions")
+
         //This section comprises of the navigation tools
         toolbar = findViewById(R.id.appbar)
         setSupportActionBar(toolbar)
