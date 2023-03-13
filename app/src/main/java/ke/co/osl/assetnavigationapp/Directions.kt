@@ -86,9 +86,7 @@ class Directions : AppCompatActivity() {
 
         back = findViewById(R.id.back)
 
-
-
-
+        close = findViewById(R.id.close)
 
 
         preferences = this.getSharedPreferences("ut_manager", MODE_PRIVATE)
