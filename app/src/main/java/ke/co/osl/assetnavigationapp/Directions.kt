@@ -202,7 +202,6 @@ class Directions : AppCompatActivity() {
         locationRequest.smallestDisplacement = 0.01f // 170 m = 0.1 mile
         locationRequest.priority = LocationRequest.PRIORITY_HIGH_ACCURACY //set according to your app function
 
-//        try {
         locationCallback = object : LocationCallback() {
             override fun onLocationResult(locationResult: LocationResult?) {
                 locationResult ?: return
@@ -223,8 +222,6 @@ class Directions : AppCompatActivity() {
 
             }
         }
-//        } catch (ex: IllegalStateException) {
-//        }
     }
 
     //start location updates
