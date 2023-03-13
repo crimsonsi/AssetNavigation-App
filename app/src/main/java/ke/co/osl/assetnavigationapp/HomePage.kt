@@ -175,13 +175,14 @@ class HomePage : AppCompatActivity() {
             getLocationUpdates()
         }
 
+
+
+        searchCustomerMeter()
+
         //Back to HomePage
         back.setOnClickListener {
             startActivity(Intent(this@HomePage, LoginPage::class.java))
         }
-
-
-        searchCustomerMeter()
     }
 
     private fun searchCustomerMeter() {
