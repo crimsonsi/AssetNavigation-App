@@ -8,7 +8,7 @@ android {
     buildToolsVersion "29.0.2"
 
     defaultConfig {
-        applicationId "ke.co.osl.utcollectorapp"
+        applicationId "ke.co.osl.assetnavigationapp"
         minSdkVersion 19
         targetSdkVersion 33
         versionCode 3
