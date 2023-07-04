@@ -51,7 +51,7 @@ class Directions : AppCompatActivity() {
     var lng: Double = 0.0
     var acc: Float = 0f
 
-    val ip_URL = "http://102.222.147.190/api/homepage/"
+    val ip_URL = "http://102.215.32.186/api/homepage/"
 
     object AndroidJSInterface {
         @JavascriptInterface

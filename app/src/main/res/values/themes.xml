@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.FarmerMappingApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.AssetNavigationApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/green</item>
         <item name="android:windowBackground">@drawable/bg2</item>
@@ -17,7 +17,7 @@
         <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItem</item>
     </style>
 
-    <style name="Theme.FarmerMappingApp.NoActionBar">
+    <style name="Theme.AssetNavigationApp.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>

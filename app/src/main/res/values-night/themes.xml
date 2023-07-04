@@ -16,7 +16,7 @@
         <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItem</item>
     </style>
 
-    <style name="Theme.FarmerMappingApp.NoActionBar">
+    <style name="Theme.AssetNavigationApp.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
